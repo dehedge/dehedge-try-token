@@ -1,0 +1,52 @@
+{
+  "name": "dehedge-try-token",
+  "version": "0.0.1",
+  "description": "DHTT (DHT Try) Token",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "fix:js": "eslint --fix test/** migrations/**",
+    "lint:js": "eslint test/** migrations/**",
+    "lint:sol": "solhint contracts/*.sol contracts/*/*.sol test/*.sol test/*/*.sol",
+    "lint": "npm run lint:js && npm run lint:sol",
+    "publish": "truffle publish",
+    "pretest": "npm run lint",
+    "test": "truffle test",
+    "coverage": "solidity-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dehedge/dehedge-try-token.git"
+  },
+  "keywords": [
+    "ethereum", "dehedge"
+  ],
+  "authors": [
+    "Vasilii Artemev <v@dehedge.com>",
+    "Rafael Bogaveev <r@dehedge.com>",
+    "Yunus Zaytaev <yunus@dehedge.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dehedge/dehedge-try-token/issues"
+  },
+  "homepage": "https://github.com/dehedge/dehedge-try-token/issues#readme",
+  "dependencies": {
+    "truffle": "4.0.6"
+  },
+  "devDependencies": {
+    "coveralls": "3.0.0",
+    "eslint": "4.13.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-mocha": "4.11.0",
+    "eslint-plugin-node": "5.1.0",
+    "eslint-plugin-react": "7.5.1",
+    "solhint": "1.1.9",
+    "solidity-coverage": "0.4.9"
+  }
+}
