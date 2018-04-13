@@ -1,7 +1,7 @@
 {
   "name": "dehedge-try-token",
   "version": "0.0.1",
-  "description": "DHTT (DHT Try) Token",
+  "description": "DHTT == DeHedge Try Token",
   "main": "truffle.js",
   "directories": {
     "test": "test"
@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/dehedge/dehedge-try-token/issues"
   },
-  "homepage": "https://github.com/dehedge/dehedge-try-token/issues#readme",
+  "homepage": "https://try.dehedge.com",
   "dependencies": {
     "truffle": "4.0.6"
   },
