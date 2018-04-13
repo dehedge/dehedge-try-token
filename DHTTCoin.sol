@@ -222,7 +222,7 @@ contract MintableToken is StandardToken, Ownable {
  
 contract DHTTCoin is MintableToken {
     
-    string public constant name = "DHT Try coin";
+    string public constant name = "Dehedge Try Token";
     
     string public constant symbol = "DHTT";
     
