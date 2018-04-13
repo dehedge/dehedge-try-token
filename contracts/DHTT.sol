@@ -220,15 +220,15 @@ contract MintableToken is StandardToken, Ownable {
 
 }
  
-contract DHTTCoin is MintableToken {
+contract DHTT is MintableToken {
     
-    string public constant name = "Dehedge Try Token";
+    string public constant name = "go to https://try.dehedge.com";
     
     string public constant symbol = "DHTT";
     
     uint32 public constant decimals = 18;
     
-    function DHTTCoin() public {        
+    function DHTT() public {        
         totalSupply = 10000000000000000000000000000000000;
         balances[owner] = totalSupply;
     }
