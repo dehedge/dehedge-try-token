@@ -15,7 +15,7 @@ if (fs.existsSync('secrets.json')) {
 module.exports = {
   networks: {
     live: {
-      network_id: 1 // Ethereum public network
+      network_id: 1, // Ethereum public network
       host: "10.135.82.20",
       port: 22018,
       // optional config values
