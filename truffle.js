@@ -16,9 +16,9 @@ module.exports = {
   networks: {
     live: {
       network_id: 1 // Ethereum public network
+      host: "10.135.82.20",
+      port: 22018,
       // optional config values
-      // host - defaults to "localhost"
-      // port - defaults to 8545
       // gas
       // gasPrice
       // from - default address to use for any transaction Truffle makes during migrations
