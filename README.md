@@ -1,2 +1,2 @@
-# dehedge-try-token
-DHTT (DHT Try) Token
+# DHTT (DeHedge Try Token)
+To learn more about it navigate to https://try.dehedge.com
