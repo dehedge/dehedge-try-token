@@ -11,7 +11,7 @@ contract DHTT is MintableToken {
     
     uint32 public constant decimals = 0;
     
-    function DHTTCoin() public {        
+    function DHTT() public {        
         totalSupply = 3000000;
        balances[owner] = totalSupply;
     }
