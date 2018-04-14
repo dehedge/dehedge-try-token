@@ -14,7 +14,7 @@ module.exports = function(callback) {
         dhtt = instance;
         for (i = 0, j = addresses.length; i < j; i += chunk) {
             batch = addresses.slice(i, i + chunk);
-            console.log('Next batch')
+            console.log('Next batch: ' + i)
             dhtt.batchTransfer(reward, batch);
         }
     });
