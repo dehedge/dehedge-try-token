@@ -23,10 +23,10 @@ module.exports = {
       // gasPrice
       // from - default address to use for any transaction Truffle makes during migrations
     },
-      development: {
-       host: "127.0.0.1",
-       port: 7545,
-       network_id: "*" // Match any network id
+    development: {
+      host: "127.0.0.1",
+      port: 7545,
+      network_id: "*" // Match any network id
     },
     ropsten: {
       //provider: new HDWalletProvider(mnemonic, 'https://ropsten.infura.io'),
@@ -42,5 +42,11 @@ module.exports = {
       gas: 0xfffffffffff,
       gasPrice: 0x01
     },
+  },
+  solc: {
+    optimizer: {
+      enabled: true,
+      runs: 200
+    }
   }
 }
