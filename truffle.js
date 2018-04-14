@@ -1,15 +1,19 @@
-const fs = require('fs')
+const fs = require('fs');
+var HDWalletProvider = require("truffle-hdwallet-provider");
 
 // First read in the secrets.json to get our mnemonic
 let secrets
 let mnemonic
+let infuraApiKey
 if (fs.existsSync('secrets.json')) {
   secrets = JSON.parse(fs.readFileSync('secrets.json', 'utf8'))
   mnemonic = secrets.mnemonic
+  infuraApiKey = secrets.infura
 } else {
   console.log('No secrets.json found. If you are trying to publish EPM ' +
               'this will fail. Otherwise, you can ignore this message!')
   mnemonic = ''
+  infuraApiKey = ''
 }
 
 module.exports = {
@@ -29,8 +33,11 @@ module.exports = {
       network_id: "*" // Match any network id
     },
     ropsten: {
-      //provider: new HDWalletProvider(mnemonic, 'https://ropsten.infura.io'),
-      network_id: '3'
+      provider: function() {
+        return new HDWalletProvider(mnemonic, 'https://ropsten.infura.io/' + infuraApiKey)
+      },
+      network_id: '3',
+      gas: 4000000
     },
     testrpc: {
       network_id: 'default'
